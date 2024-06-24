@@ -25,11 +25,16 @@ module.exports = {
 			            'LabeledStatement',
 			            'WithStatement',
 			          ],
+		      'import/extensions': ['error', 'ignorePackages', {
+			            js: 'always',
+			          }],
+		      'new-cap': ['error', { 'newIsCap': true }],
 		    },
-	  overrides:[
+	  overrides: [
 		      {
 			            files: ['*.js'],
 			            excludedFiles: 'babel.config.js',
 			          }
 		    ]
 };
+
