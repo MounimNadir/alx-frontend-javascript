@@ -1,12 +1,10 @@
-class GetNeighborhoodsList {
-	  constructor() {
-		      this.neighborhoods = [];
-		    }
+export default function getNeighborhoodsList() {
+	  this.sanFranciscoNeighborhoods = ['SOMA', 'Union Square'];
 
-	  addNeighborhood(neighborhood) {
-		      this.neighborhoods.push(neighborhood);
-		      return this.neighborhoods;
-		    }
+	  const self = this;
+	  this.addNeighborhood = (newNeighborhood) => {
+		      self.sanFranciscoNeighborhoods.push(newNeighborhood);
+		      return self.sanFranciscoNeighborhoods;
+		    };
 }
 
-export default GetNeighborhoodsList;
